@@ -1,8 +1,208 @@
-.main__css {
-  background-color: green;
-  width: 100%;
-  height: 100%;
+* {
+  font-family: "Inter", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 100px;
+}
+
+.header__logo-text {
+  padding: 0 0 0 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #18216D;
+}
+
+.header__nav {
+  max-width: 507px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
+.header__nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #18216D;
+  -webkit-transition: color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: color 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: color 0.2s linear, transform 0.2s linear;
+  transition: color 0.2s linear, transform 0.2s linear;
+  transition: color 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.header__nav-link:hover {
+  color: #070814;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.header__nav-link:not(:last-child) {
+  margin: 0 60px 0 0;
+}
+
+.header__module {
+  margin: 0 100px 0 0;
+}
+
+.header__module-sign {
+  margin: 0 40px 0 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #18216D;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.header__module-sign:hover {
+  color: black;
+}
+
+.header__module-download {
+  padding: 16px 27px;
+  border: 1px solid #18216D;
+  background: #18216D;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 6px;
+  -webkit-transition: color 0.2s linear, background 0.2s linear;
+  -o-transition: color 0.2s linear, background 0.2s linear;
+  transition: color 0.2s linear, background 0.2s linear;
+}
+
+.header__module-download:hover {
+  background: #fff;
+  color: #18216D;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  background-image: url(../img/main.png);
+  background-repeat: no-repeat;
+  height: 600px;
+  background-position: right;
+}
+
+.main__info {
+  max-width: 500px;
+}
+
+.main__info-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #18216D;
+  padding: 140px 0 0;
+}
+
+.main__info-text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 28px;
+  color: #18216D;
+  margin: 30px 0;
+}
+
+.main__info-btn {
+  padding: 23px 27px;
+  background: #00ECD0;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #18216D;
+  border: 1px #00ECD0 solid;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0 0;
+}
+
+.reviews__text {
+  max-width: 500px;
+}
+
+.reviews__text-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50px;
+  color: #18216D;
+}
+
+.reviews__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.esti__title {
+  font-size: 60px;
+  line-height: 70px;
+  /* identical to box height, or 117% */
+  letter-spacing: -1px;
+  /* navy blue */
+  color: #18216D;
+}
+
+.esti__title:first-child {
+  margin: 0 90px 0 0;
+}
+
+.corparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  padding: 50px 0 0;
+}
+
+.webp .main { background-image: url(../img/main.webp); }
